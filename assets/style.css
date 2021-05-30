@@ -1,0 +1,182 @@
+/* Font Include */
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Rajdhani:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.button-content {
+    display: flex;
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    font-size: 25px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+h1,
+p {
+    font-family: 'Langar', cursive;
+}
+
+/* Responsive */
+@media only screen and (min-width: 576px) {
+    h1 {
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+        overflow: hidden;
+    }
+
+    .button-content {
+        height: 75vh;
+        padding-top: 100px;
+        padding-bottom: 25px;
+    }
+    
+    .button-content .row {
+        padding-top: 930px;
+        padding-bottom: 0;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.btn{
+    color:#b8b8b8;
+    font-size: 50px;
+    margin: 40px 65px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 4px solid #b8b8b8;
+    transition: all 0.3s ease-in 0s;
+}
+
+.btn:hover{
+    color:#b8b8b8;
+}
+
+.btn:before,
+.btn:after {
+    content: "";
+    position: absolute;
+    border-radius: 0px;
+    border-style: solid;
+    box-sizing: content-box;
+    transition:all 0.5s ease 0s;
+}
+
+.btn:before {
+    left: 0;
+    width: 0;
+    top: -4px;
+    height: 100%;
+    border-width: 4px 0 4px 0;
+}
+
+.btn:after {
+    top: 0;
+    height: 0;
+    left: -4px;
+    width: 100%;
+    border-width: 0 4px 0 4px;
+}
+
+.btn:hover:before {
+    width: 100%;
+}
+
+.btn:hover:after {
+    height: 100%;
+}
+
+.btn.primary:before, 
+.btn.primary:after {
+    border-color: #0d6efd;
+}
+.btn.primary:hover {
+    color: #0d6efd;
+}
+
+.btn.secondary:before, 
+.btn.secondary:after {
+    border-color: #6c757d;
+}
+.btn.secondary:hover {
+    color: #6c757d;
+}
+
+.btn.success:before, 
+.btn.success:after {
+    border-color: #198754;
+}
+.btn.success:hover {
+    color: #198754;
+}
+
+.btn.danger:before, 
+.btn.danger:after {
+    border-color: #dc3545;
+}
+.btn.danger:hover {
+    color: #dc3545;
+}
+
+.btn.warning:before, 
+.btn.warning:after {
+    border-color: #ffc107;
+}
+.btn.warning:hover {
+    color: #ffc107;
+}
+
+.btn.info:before, 
+.btn.info:after {
+    border-color: #0dcaf0;
+}
+.btn.info:hover {
+    color: #0dcaf0;
+}
+
+.btn.light:before, 
+.btn.light:after {
+    border-color: #f8f9fa;
+}
+.btn.light:hover {
+    color: #f8f9fa;
+}
+
+.btn.dark:before, 
+.btn.dark:after {
+    border-color: #212529;
+}
+.btn.dark:hover {
+    color: #212529;
+}
